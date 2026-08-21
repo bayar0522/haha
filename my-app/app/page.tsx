@@ -21,7 +21,7 @@ export default function Home() {
 
           <LocalPhoneIcon className="text-white"/>
           </div>
-        <p className="text-white pr-25"> 976+7007-1234</p> 
+        <p className="text-white pr-25"> 976+7007-12345</p> 
         <div className="border-1 rounded-full border-gray-600 p-4">
 
         <EmailIcon className="text-white "/>
