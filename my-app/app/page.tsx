@@ -1,46 +1,34 @@
 import { link } from "fs";
 import Image from "next/image";
-import CodeIcon from '@mui/icons-material/Code';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import EmailIcon from '@mui/icons-material/Email';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import CodeIcon from "@mui/icons-material/Code";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 export default function Home() {
   return (
-
-    
-      <div className="w-[100vw] h-[45vh] bg-gray-900 ">
-        <div className="flex justify-end items-center gap-9 my-14">
-          <div className="text-[36px] font-black text-amber-50">
-           <div className=" w-[35vw] flex justify-start"><CodeIcon style={{fontSize:"90px"}}/></div>
-
-          </div>
-          <div className=" border-1 rounded-full border-gray-600 p-4">
-
-          <LocalPhoneIcon className="text-white"/>
-          </div>
-        <p className="text-white pr-25"> 976+7007-12345</p> 
-        <div className="border-1 rounded-full border-gray-600 p-4">
-
-        <EmailIcon className="text-white "/>
-        </div>
-        <p className="text-white pr-25">contact@ecommerce.mn</p>
-        </div>
-        <div className=" flex justify-between items-center my-14 ">
-          <p className="text-white pl-25">@2024 Ecommerce MN</p>
-          <div className="mr-50 ">
-
-         <FacebookIcon className="text-white"/>
-         <InstagramIcon className="text-white"/>
-         <TwitterIcon className="text-white"/>
-         <LinkedInIcon className="text-white"/>
-          </div>
-
-        </div>
-        
-
+    <div className="w-[100vw] h-[10vh] bg-gray-900 flex justify-evenly items-center gap-5">
+      <div className="flex gap-8 justify-start">
+        <CodeIcon
+          className="text-white items-center"
+          style={{ fontSize: "32px" }}
+        />
+        <h1 className="text-white">ECOMMERCE</h1>
+        <p className="text-gray-400">Ангилал</p>
       </div>
-  )
+      <div className="bg-gray-700 text-white">
+        <input type="search" />
+      </div>
+
+      <div className="flex gap-8 justify-end">
+        <FavoriteBorderIcon className="text-white" />
+        <ShoppingCartIcon className=" text-white" />
+        <button className="border border-blue-700 border-2 rounded-3xl hover:bg-blue-400">
+          <p className="text-white">Нэвтрэх</p>
+        </button>
+
+        <button className="border border-blue-700 rounded-3xl bg-blue-600 hover:bg-blue-400">
+          <p className="text-white">Бүртгүүлэх</p>
+        </button>
+      </div>
+    </div>
+  );
 }
