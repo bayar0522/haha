@@ -8,12 +8,12 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 export default function Home() {
   return (
   <>
-      <div className="w-[100vw] h-[10vh] bg-gray-900 flex justify-evenly items-center gap-5">
+      <div className="w-[100vw] h-[10vh] bg-gray-900 flex justify-evenly items-center gap-5 sticky top-0 z-10" >
       <div className="flex gap-8 justify-start">
         <CodeIcon
           className="text-white items-center"
-          style={{ fontSize: "32px" }}
-        />
+          style={{ fontSize: "32px" }}/>
+        
         <h1 className="text-white">ECOMMERCE</h1>
         <p className="text-gray-400">Ангилал</p>
       </div>
