@@ -1,8 +1,39 @@
 import { Linefont } from "next/font/google";
+import { link } from "fs";
 import Image from "next/image";
+
+import CodeIcon from "@mui/icons-material/Code";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 export default function Home() {
   return (
+  <>
+      <div className="w-[100vw] h-[10vh] bg-gray-900 flex justify-evenly items-center gap-5">
+      <div className="flex gap-8 justify-start">
+        <CodeIcon
+          className="text-white items-center"
+          style={{ fontSize: "32px" }}
+        />
+        <h1 className="text-white">ECOMMERCE</h1>
+        <p className="text-gray-400">Ангилал</p>
+      </div>
+      <div className="bg-gray-700 text-white">
+        <input type="search" />
+      </div>
+
+      <div className="flex gap-8 justify-end">
+        <FavoriteBorderIcon className="text-white" />
+        <ShoppingCartIcon className=" text-white" />
+        <button className="border border-blue-700 border-2 rounded-3xl hover:bg-blue-400">
+          <p className="text-white">Нэвтрэх</p>
+        </button>
+
+        <button className="border border-blue-700 rounded-3xl bg-blue-600 hover:bg-blue-400">
+          <p className="text-white">Бүртгүүлэх</p>
+        </button>
+      </div>
+    </div> 
+    
     <div className="w-[100vw]  flex">
       <div className="w-[15vw]   bg-black"></div>
       <div className="w-[70vw]   bg-white ">
@@ -16,9 +47,7 @@ export default function Home() {
           ></Image>
 
           <div
-            className="w-[10vw] h-[10vh] flex flex-col items-baseline-last absolute left-15 bottom-3 text-white font-bold
-           "
-          >
+            className="w-[10vw] h-[10vh] flex flex-col items-baseline-last absolute left-15 bottom-3 text-white font-bold">
             {" "}
             <h1>wildflower shirt</h1>
             <h1>120,000$</h1>
@@ -152,7 +181,7 @@ export default function Home() {
                   height={1000}
                 ></Image>
                 </div>
-                <h2>Chunky Glyph cap</h2>{" "}
+                <h2>Local Styles Crewneck</h2>{" "}
                 <h2 className="font-bold">120,000$</h2>
               </div>
 
@@ -195,7 +224,7 @@ export default function Home() {
                 height={1000}
               ></Image>
             </div>
-            <h2>The Prompt Magazine </h2>{" "}
+            <h2> Chunky Glyph tee</h2>{" "}
             <h2 className="font-bold">120,000$</h2>
           </div>
           <div className=" w-[10vw] h-[35vh]flex flex-col ">
@@ -209,9 +238,9 @@ export default function Home() {
                   width={300}
                   height={1000}
                 ></Image>
-                <FavoriteBorderIcon className="  hover:text-red-600" />{" "}
+               {" "}
             </div>
-            <h2>Chunky Glyph tee</h2> <h2 className="font-bold">120,000$</h2>
+            <h2>All Smiles Nalgene</h2> <h2 className="font-bold">120,000$</h2>
           </div>
           <div className=" w-[10vw] h-[35vh]flex flex-col ">
             {" "}
@@ -222,7 +251,7 @@ export default function Home() {
                   width={300}
                   height={1000}
                 ></Image></div>
-            <h2> All smiles Nalgene</h2> <h2 className="font-bold">120,000$</h2>
+            <h2> The Prompt Magazine</h2> <h2 className="font-bold">120,000$</h2>
           </div>{" "}
           <div className=" w-[10vw] h-[35vh]flex flex-col ">
             {" "}
@@ -239,7 +268,7 @@ export default function Home() {
                   ></Image>
                 </div>
               </div>
-              <h2>Wildflower Hoodie</h2>{" "}
+              <h2>Independent Corners Tee</h2>{" "}
               <h2 className="font-bold ">120,000$ </h2>
             </div>
           </div>
@@ -256,7 +285,7 @@ export default function Home() {
                     height={1000}
                   ></Image>
             </div>
-            <h2>The Prompt Magazine </h2>{" "}
+            <h2>Independent Corners Tee</h2>{" "}
             <h2 className="font-bold">120,000$</h2>
           </div>
           <div className=" w-[10vw] h-[35vh]flex flex-col ">
@@ -271,7 +300,7 @@ export default function Home() {
               ></Image>{" "}
               <FavoriteBorderIcon className="  hover:text-red-600" />{" "}
             </div>
-            <h2>Chunky Glyph tee</h2> <h2 className="font-bold">120,000$</h2>
+            <h2>The Prompt Magazine</h2> <h2 className="font-bold">120,000$</h2>
           </div>
           <div className=" w-[10vw] h-[35vh]flex flex-col ">
             {" "}
@@ -285,7 +314,7 @@ export default function Home() {
                 height={1000}
               ></Image>{" "}
             </div>
-            <h2> All smiles Nalgene</h2> <h2 className="font-bold">120,000$</h2>
+            <h2> The Prompt Magazine</h2> <h2 className="font-bold">120,000$</h2>
           </div>{" "}
           <div className=" w-[10vw] h-[35vh]flex flex-col ">
             {" "}
@@ -302,7 +331,7 @@ export default function Home() {
                   ></Image>
                 </div>
               </div>
-              <h2>Wildflower Hoodie</h2>{" "}
+              <h2>All smiles Nalgene</h2>{" "}
               <h2 className="font-bold ">
                 120,000${" "}
                
@@ -313,6 +342,7 @@ export default function Home() {
       </div>
 
       <div className="w-[15vw] h-[400vh] bg-black"></div>
-    </div>
+      </div>
+    </>
   );
 }
