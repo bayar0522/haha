@@ -341,7 +341,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-[15vw] h-[400vh] bg-black"></div>
+      <div className="w-[15vw] h-[310vh] bg-black"></div>
       </div>
     </>
   );
